@@ -37,6 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    # standard apps/imported apps/third party apps
+    'photologue',
+    'sortedm2m',
+    # custom apps
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -118,3 +124,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# for site framework
+SITE_ID = 1
